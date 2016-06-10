@@ -10,6 +10,7 @@ ADD run.sh /run.sh
 RUN chmod +x /*.sh
 
 ENV AUTHORIZED_KEYS **None**
+VOLUME ["/data"]
 
 EXPOSE 22
 CMD ["/run.sh"]
